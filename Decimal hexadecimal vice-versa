@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main(int argc, char *argv[])
+{
+    int escolha, valor;
+    
+    printf(" Digite a opcao desejada de conversao \n \n");
+   
+    printf(" 1: Decimal para Hexadecimal \n 2: Hexadecimal para Decimal\n \n Digite a opcao: ");
+   
+    scanf("%d", &escolha);
+    
+	getchar();
+    
+    if(escolha == 1)
+    
+    
+    {
+      printf("\n Informar o valor em decimal: \n ");
+     
+	  scanf("%d", &valor);
+     
+	  getchar();
+     
+	  printf("\n %d em hexadecimal eh: %x\n", valor, valor);         
+    }
+    else if(escolha == 2)
+    
+    
+    {
+      printf("\n Informar o valor em hexadecimal: \n");
+      
+	  scanf("%x", &valor);
+      
+	  getchar();
+     
+	  printf("\n %x em decimal e: %d\n", valor, valor);     
+    }
+    
+    else printf("\n Escolha invalida.\n");
+  
+  system("pause");	
+  
+  
+  return 0;
+}
